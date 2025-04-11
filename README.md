@@ -3,12 +3,7 @@
 **Assistive Workmate** is an AI-powered system automation software designed to simplify system tasks, file handling, and troubleshooting. It supports both GUI and voice commands for seamless automation and integrates AI for smarter workflow execution.
 
 Banner
-                   _     _   _            __          __        _                   _       
-     /\           (_)   | | (_)           \ \        / /       | |                 | |      
-    /  \   ___ ___ _ ___| |_ ___   _____   \ \  /\  / /__  _ __| | ____ _ _ __ ___ | |_ ___ 
-   / /\ \ / __/ __| / __| __| \ \ / / _ \   \ \/  \/ / _ \| '__| |/ / _` | '_ ` _ \| __/ _ \
-  / ____ \\__ \__ \ \__ \ |_| |\ V /  __/    \  /\  / (_) | |  |   < (_| | | | | | | ||  __/
- /_/    \_\___/___/_|___/\__|_| \_/ \___|     \/  \/ \___/|_|  |_|\_\__,_|_| |_| |_|\__\___|
+![logoAW](https://github.com/user-attachments/assets/a14874a1-16f1-485c-a350-0e15790511a3)
 
 ---
 
