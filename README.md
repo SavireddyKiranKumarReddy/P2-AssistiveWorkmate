@@ -1,68 +1,79 @@
-# 🚀 Assistive Workmate
+# Assistive Workmate
 
-**Assistive Workmate** is an AI-powered system automation software designed to simplify system tasks, file handling, and troubleshooting. It supports both GUI and voice commands for seamless automation and integrates AI for smarter workflow execution.
+**AI-Powered Automation Software for Seamless Productivity**
 
-![logoAW](https://github.com/user-attachments/assets/a14874a1-16f1-485c-a350-0e15790511a3)
-
----
-
-## 🌟 Features
-
-- **🗣️ GUI & Voice-Based Interaction** – Control the application via typing or voice commands.
-- **🤖 Task Automation & Troubleshooting** – Automate system tasks and optimize workflows.
-- **🔄 Predefined & Custom Workflows** – Utilize ready-to-use and customizable automation sequences.
-- **⏳ Real-time & Scheduled Execution** – Execute tasks instantly or schedule them for later.
-- **🔒 Secure Execution with User Permissions** – Ensure safe automation with proper user permissions.
+Assistive Workmate is an AI-driven assistant designed to **automate OS-level tasks**, **troubleshoot system issues**, and **optimize performance** with minimal manual effort. Built to assist both technical and non-technical users, it transforms natural language inputs into real system actions—**not just suggestions.**
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Features
 
-| **Category**       | **Technologies Used**                              |
-|--------------------|----------------------------------------------------|
-| **Frontend**       | React, TypeScript, Tailwind CSS                    |
-| **Backend**        | FastAPI, PostgreSQL, Supabase                      |
-| **Automation**     | Python, Power Automate, Bash                       |
-| **AI Integration** | Google Gemini API                                  |
+- **AI-Powered Task Understanding** – Uses Google Gemini API to interpret user instructions.
+- **System-Level Automation** – Executes tasks using Python, subprocess, and PyAutoGUI.
+- **User Approval & Safety** – Every task runs only after user consent.
+- **Secure Sandboxing** – Tasks run in isolated environments to protect your system.
+- **Cascading Fallback Mechanism** – If one method fails, alternatives are automatically tried.
+- **Role-Based Access Control (RBAC)** – Limit actions based on user roles.
+- **Cross-Platform Design** – Windows (initial), Linux/macOS support planned.
 
 ---
 
-## ⚡ Getting Started
+## 🧠 How It Works
 
-### 🔧 Prerequisites
+1. **User Input:** The user types a system-level request in natural language.
+2. **AI Processing:** The prompt is sent to the Gemini API.
+3. **Command Generation:** Python parses the output and determines the best method to execute it.
+4. **User Approval:** Action preview is shown, and user confirms before execution.
+5. **Automation Execution:** Commands are executed via subprocess/PyAutoGUI in a safe sandbox.
+6. **Logging & Monitoring:** All actions are logged and monitored in real time.
 
-Ensure the following are installed on your system:
+---
 
-- **Node.js** (>= 18.x)
-- **npm** or **yarn**
-- **Python** (>= 3.8)
-- **PostgreSQL** (For database)
+## 🛠️ Tech Stack
 
-  
-## 🚀 How to Use Assistive Workmate
+### Frontend
+- React + Vite + TailwindCSS  
+- Live feedback console  
+- Approval modals and UI prompts
 
-1. **Download the Project**
-   - Click on the green **Code** button and download the project as a `.zip` file.
-   - Unzip the downloaded folder.
+### Backend
+- Node.js + WebSockets + Zod  
+- Task execution server  
+- Real-time monitoring
 
-2. **Open in Your IDE**
-   - Open the unzipped folder in your preferred IDE (e.g., Visual Studio Code).
+### Automation Engine
+- Python: `subprocess`, `os`, `re`, `PyAutoGUI`  
+- NLP: NLTK + Regex  
+- Fallback Mechanism for alternate flows
 
-3. **Install Dependencies**
-   - Open the terminal in the project directory and run:
-     ```bash
-     npm install
-     ```
+### AI Integration
+- **Google Gemini API** for task understanding
 
-4. **Start the Development Server**
-   - Once dependencies are installed, start the development server by running:
-     ```bash
-     npm run dev
-     ```
+### Database
+- **Supabase (PostgreSQL)** – User sessions, task logs, and roles
 
-5. **Launch the App**
-   - After the server starts, a local development URL will be displayed in the terminal (e.g., `http://localhost:3000`).
-   - Click the link or copy and paste it into your browser.
+---
 
-> ✅ You're all set! Enjoy using the project. If you encounter any issues, feel free to raise an issue or contribute!
+## ⚙️ Installation
 
+> **Requirements:** Node.js, Python 3.10+, Supabase account
+
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/assistive-workmate.git
+cd assistive-workmate
+
+# Install Frontend
+cd frontend
+npm install
+npm run dev
+
+# Install Backend
+cd ../backend
+npm install
+node server.js
+
+# Run Python Automation Agent
+cd ../automation
+pip install -r requirements.txt
+python executor.py
