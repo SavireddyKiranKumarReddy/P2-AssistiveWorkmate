@@ -58,22 +58,12 @@ Assistive Workmate is an AI-driven assistant designed to **automate OS-level tas
 
 > **Requirements:** Node.js, Python 3.10+, Supabase account
 
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/assistive-workmate.git
-cd assistive-workmate
+1. Download the .zip file.
+2. Extract (unzip) the contents.
+3. Open the extracted folder in your IDE (e.g., Visual Studio Code).
+4. Open the terminal in the project directory.
+5. Install all the required dependencies:
+   npm install
+6. Start the development server:
+   npm run dev
 
-# Install Frontend
-cd frontend
-npm install
-npm run dev
-
-# Install Backend
-cd ../backend
-npm install
-node server.js
-
-# Run Python Automation Agent
-cd ../automation
-pip install -r requirements.txt
-python executor.py
